@@ -112,8 +112,8 @@ figure {
 }
 
 figure img{
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
     border-radius: 45px;
     box-shadow: 10px 10px 10px #0000002a;
     transition: scale 0.2s;
@@ -121,8 +121,8 @@ figure img{
     object-fit: cover;
 }
 figure iframe{
-    width: 800px;
-    height: 400px;
+    width: 600px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -182,8 +182,8 @@ address {
         opacity: 0.0;
     }
     figure iframe{
-        width: 80%;
-        height: 80%;
+        width: 40%;
+        height: 40%;
         object-fit: contain;
     }
 }
@@ -193,8 +193,8 @@ address {
         font-size: 0.8rem;
     }
     figure iframe{
-        width: 80%;
-        height: 80%;
+        width: 40%;
+        height: 40%;
         object-fit: contain;
     }
     aside{
