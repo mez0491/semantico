@@ -172,7 +172,6 @@ address {
 /*Pantallas de telefono pequeña*/
 @media only screen and (max-width: 600px){
     header{
-        background: var(--c2);
         font-size: 0.8rem;
         text-align: center;
     }
@@ -202,7 +201,6 @@ address {
 /*Pantallas de telefono grande*/
 @media only screen and (min-width: 600px){
     header{
-        background: var(--c3);
         font-size: 0.8rem;
     }
     figure iframe{
@@ -214,7 +212,6 @@ address {
 /*Pantallas de tablet mediana*/
 @media only screen and (min-width: 768px){
     header{
-        background: var(--c4);
         font-size: 0.8rem;
     }
     figure iframe{
@@ -230,7 +227,6 @@ address {
 /*Pantallas de escritorio grande*/
 @media only screen and (min-width: 1200px){
     header{
-        background: var(--c5);
         font-size: 0.8rem;
     }
     figure iframe{
