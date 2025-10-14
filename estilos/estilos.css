@@ -62,7 +62,8 @@ nav a:hover {
 
 main {
     display: flex;
-    gap: 15px;
+    padding: 0px;
+    margin: 0px;
 }
 
 section {
@@ -76,6 +77,7 @@ article {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
+    
 }
 
 article ul li{
@@ -179,21 +181,10 @@ address {
         display: none;
         opacity: 0.0;
     }
-    main{
-        margin: 0px;
-    }
-    header, nav, main, section, article, aside, footer {
-        padding: 15px;
-        margin: 5px;
-        border-radius: 8px;
-    }
     figure iframe{
         width: 80%;
         height: 80%;
         object-fit: contain;
-    }
-    section{
-        margin: 0px;
     }
 }
 /*Pantallas de telefono grande*/
@@ -239,8 +230,5 @@ address {
     aside{
         opacity: 1.0;
         display: block;
-    }
-    section{
-        margin: 10px;
     }
 }
