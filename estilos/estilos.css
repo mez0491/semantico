@@ -1,0 +1,229 @@
+
+/* ====== ESTILOS BÁSICOS ====== */
+/*Paleta de colores*/
+:root{
+    --c1: #000a2a; --c2: #f2f2f2; --c3: #dadada; --c4: #20b0f0; --c5: #005aaa; --c6 : #1a80ac;
+    --s1: #dafa2a;
+    --hov6 : #168bb2;
+}
+
+/*Estilo base para pantallas pequeñas*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: var(--c3);
+    color: #333;
+}
+
+header, nav, main, section, article, aside, footer {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+header {
+    background: var(--c1);
+    color: white;
+    transition: background 0.2s;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transform: translateY(0px);
+    transition-duration: 0.2s;
+    padding: 10px;
+    display: inline-block;
+    
+}
+
+nav a:hover {
+    color: var(--s1);
+    transform: translateY(-5px);
+}
+
+main {
+    display: flex;
+    gap: 15px;
+}
+
+section {
+    flex: 3;
+    background: #ffffff;
+}
+
+article {
+    color: var(--c1);
+    background: var(--c4);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+article ul li{
+    color: white;
+    list-style-type: none;
+    background-color: var(--c6);
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+
+article ul li ul li{
+    color: white;
+    list-style-type: none;
+    background-color: var(--c6);
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+
+article ul li ul li:hover{
+    background-color: var(--hov6)
+}
+
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    box-shadow: 10px 10px 10px #0000002a;
+    transition: scale 0.2s;
+    display: inline-block;
+    object-fit: contain;
+}
+figure iframe{
+    width: 800px;
+    height: 400px;
+    object-fit: contain;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: var(--c3);
+}
+
+aside {
+    flex: 1;
+    color: white;
+    background: var(--c5);
+    transition: opacity 0.2s;
+    font-size: 1rem;
+}
+
+footer {
+    background: var(--c1);
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    
+}
+
+footer nav{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    text-align: left;
+}
+
+footer nav ul{
+    list-style: none;
+    padding: 0;
+    display: block;
+    gap: 15px;
+    text-align: left;
+}
+
+address {
+    font-style: normal;
+}
+
+
+
+/*Estilos responsivos*/
+
+/*Pantallas de telefono pequeña*/
+@media only screen and (max-width: 600px){
+    header{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    section{
+        width: 50%;
+        flex: 1;
+    }
+    aside{
+        display: none;
+        opacity: 0.0;
+        flex: 0;
+    }
+    main{
+        gap:0px;
+    }
+    header, nav, main, section, article, aside, footer {
+        padding: 15px;
+        margin: 5px;
+        border-radius: 8px;
+    }
+    figure iframe{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+/*Pantallas de telefono grande*/
+@media only screen and (min-width: 600px){
+    figure iframe{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+/*Pantallas de tablet mediana*/
+@media only screen and (min-width: 768px){
+    figure iframe{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    aside{
+        opacity: 1.0;
+        display: block;
+    }
+}
+/*Pantallas de escritorio grande*/
+@media only screen and (min-width: 1200px){
+    figure iframe{
+        width: 800px;
+        height: 400px;
+        object-fit: contain;
+    }
+    aside{
+        opacity: 1.0;
+        display: block;
+    }
+}
