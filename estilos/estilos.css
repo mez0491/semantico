@@ -226,12 +226,6 @@ address {
         opacity: 1.0;
         display: none;
     }
-    nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        gap: 15px;
-    }
 }
 /*Pantallas de escritorio grande*/
 @media only screen and (min-width: 1200px){
@@ -247,11 +241,5 @@ address {
     aside{
         opacity: 1.0;
         display: block;
-    }
-    nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        gap: 15px;
     }
 }
