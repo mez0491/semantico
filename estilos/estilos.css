@@ -118,12 +118,12 @@ figure img{
     box-shadow: 10px 10px 10px #0000002a;
     transition: scale 0.2s;
     display: inline-block;
-    object-fit: contain;
+    object-fit: cover;
 }
 figure iframe{
     width: 800px;
     height: 400px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 figcaption {
