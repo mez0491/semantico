@@ -192,6 +192,9 @@ address {
         height: 80%;
         object-fit: contain;
     }
+    section{
+        margin: 0px;
+    }
 }
 /*Pantallas de telefono grande*/
 @media only screen and (min-width: 700px){
@@ -236,5 +239,8 @@ address {
     aside{
         opacity: 1.0;
         display: block;
+    }
+    section{
+        margin: 10px;
     }
 }
