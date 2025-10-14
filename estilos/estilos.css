@@ -170,9 +170,9 @@ address {
 /*Estilos responsivos*/
 
 /*Pantallas de telefono pequeña*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
     header{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         text-align: center;
     }
     aside{
@@ -194,7 +194,7 @@ address {
     }
 }
 /*Pantallas de telefono grande*/
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 700px){
     header{
         font-size: 0.8rem;
     }
