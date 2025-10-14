@@ -197,6 +197,9 @@ address {
 }
 /*Pantallas de telefono grande*/
 @media only screen and (min-width: 600px){
+    header{
+        font-size: 0.8rem;
+    }
     figure iframe{
         width: 100%;
         height: 100%;
