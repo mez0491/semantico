@@ -212,7 +212,7 @@ address {
     }
     aside{
         opacity: 1.0;
-        display: block;
+        display: none;
     }
 }
 /*Pantallas de escritorio grande*/
