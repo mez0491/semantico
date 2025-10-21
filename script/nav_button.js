@@ -9,7 +9,7 @@ function setup(){
     /*Encontrar los elementos de menu*/
     menu_button = document.getElementById("nav_menu_button");
     side_bar = document.getElementById("sidebar");
-    
+    document.addEventListener("resize",resized_screen);
     /*Asignar botones para cerrar menu */
     assign_buttons();
 
@@ -78,3 +78,7 @@ function assign_buttons(){
     }*/
 }
 
+function resized_screen(){
+    const new_width = window.innerWidth;
+    const new_height = window.innerHeight;
+}

@@ -88,6 +88,7 @@ header div{
     justify-content: center;
     box-shadow: 15px 0px 100px var(--c1);
     z-index: 100;
+    gap: 15px;
 }
 
 /*Menu de navegacion*/
@@ -130,12 +131,14 @@ nav a {
     transition-duration: 0.2s;
     padding: 10px;
     display: inline-block;
-
+    background-color: var(--c5);
+    border-radius: 15px;
     
 }
 
 nav a:hover {
     color: var(--s1);
+    background-color: var(--hov6);
     transform: translateY(-5px);
 }
 
