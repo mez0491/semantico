@@ -46,14 +46,12 @@ function toggle_menu(){
 
 function open_menu(){
     if (is_menu_open == false){
-        console.log("Menu abierto!");
         make_side_bar_small();
         is_menu_open = true;
     }
 }
 function close_menu(){
     if (is_menu_open == true){
-        console.log("Menu cerrado!");
         make_side_bar_big();
         is_menu_open = false;
     }
