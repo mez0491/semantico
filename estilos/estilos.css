@@ -6,6 +6,14 @@
     --s1: #dafa2a;
     --hov6 : #168bb2;
 }
+html,body{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
 
 /*Estilo base para pantallas pequeñas*/
 body {
@@ -13,8 +21,8 @@ body {
     margin: 0;
     background: var(--c3);
     color: #333;
-    width: 100wh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 header, nav, main, section, article, aside, footer {
