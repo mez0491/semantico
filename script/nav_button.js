@@ -70,6 +70,11 @@ function make_side_bar_big(){
 function assign_buttons(){
     const buttons = document.getElementsByClassName("sidemenu_button");
 
-
+    /*for (index = 0; index < buttons.length; index++) {
+        const element = buttons[index];
+        element.addEventListener("click",close_menu);
+        element.addEventListener("touchend",close_menu);
+        
+    }*/
 }
 

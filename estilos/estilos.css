@@ -97,6 +97,7 @@ header div{
     list-style: none;
     padding: 0;
     display: flex;
+    flex-direction: row;
     gap: 15px;
     object-fit: contain;
     
@@ -114,7 +115,7 @@ header div{
 }
 @media screen and (min-width: 600px){
     .nav_menu_big{
-        display: block;
+        display: flex;
     }
     .btn_nav{
         display: none;
