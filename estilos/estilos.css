@@ -225,27 +225,6 @@ figure iframe{
     object-fit: cover;
 }
 
-@media screen and (max-width: 600px){
-    figure img{
-        width: 10%;
-        height: 10%;
-    }
-    figure iframe{
-        width: 250px;
-        height: 125px;
-    }
-}
-@media screen and (min-width: 600px){
-    figure img{
-        width: 50%;
-        height: 50%;
-    }
-    figure iframe{
-        width: 600px;
-        height: 200px;
-    }
-}
-
 
 
 figcaption {
