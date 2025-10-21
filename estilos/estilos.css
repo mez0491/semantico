@@ -143,7 +143,7 @@ nav a:hover {
 }
 
 main {
-    min-width: 100wh;
+    
     display: flex;
     padding: 0px;
     margin: 0px;
@@ -161,6 +161,22 @@ article {
     border-radius: 5px;
     margin-bottom: 15px;
     
+}
+
+@media screen and (max-width: 600px){
+    article{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (min-width: 600px){
+    article{
+        font-size: 2rem;
+    }
+}
+
+article ul{
+    padding: 0;
+    margin: 0;
 }
 
 article ul li{
@@ -208,6 +224,29 @@ figure iframe{
     height: 200px;
     object-fit: cover;
 }
+
+@media screen and (max-width: 600px){
+    figure img{
+        width: 10%;
+        height: 10%;
+    }
+    figure iframe{
+        width: 250px;
+        height: 125px;
+    }
+}
+@media screen and (min-width: 600px){
+    figure img{
+        width: 50%;
+        height: 50%;
+    }
+    figure iframe{
+        width: 600px;
+        height: 200px;
+    }
+}
+
+
 
 figcaption {
     font-size: 0.9em;
