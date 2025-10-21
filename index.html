@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>UPSIN | Ingenieria en Requisitos</title>
+
+    <!--Script para menu lateral-->
+    <script src="./script/nav_button.js"></script>
+
 </head>
 
 <body>
@@ -16,13 +20,23 @@
             <img class="img_logo" src="imagenes/logo_transparente.png" alt="Logotipo Upsin">
             <h1>Ingenieria de Requisitos</h1>
         </div>
+
+
+        <!--Navegacion en dispositivo movil-->
+        <nav>
+            <button id="nav_menu_button" class="btn_nav">
+                <img src="./imagenes/side_menu_btn.png" alt="Boton de Menu">
+            </button>
+        </nav>
+        
+
         <!-- Se utilizo nav y ul para un menu de opciones -->
         <nav>
-            <ul>
-                <li><a href="#programa">Programa Educativo</a></li>
-                <li><a href="#proposito">Proposito de Aprendizaje</a></li>
-                <li><a href="#unidades">Unidades de Aprendizaje</a></li>
-                <li><a href="#temas">Temas de Unidades de Aprendizaje</a></li>
+            <ul id="sidebar" class="nav_menu_big">
+                <li><a class="sidemenu_button" href="#programa">Programa Educativo</a></li>
+                <li><a class="sidemenu_button" href="#proposito">Proposito de Aprendizaje</a></li>
+                <li><a class="sidemenu_button" href="#unidades">Unidades de Aprendizaje</a></li>
+                <li><a class="sidemenu_button" href="#temas">Temas de Unidades de Aprendizaje</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +45,6 @@
     <main>
         <section>
             <h2>Sección Principal</h2>
-
             <!-- article se uso para mostrar cada apartado dentro de el contenido principal -->
             <article id="programa">
                 <h3>Programa educativo</h3>

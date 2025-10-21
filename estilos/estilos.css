@@ -13,6 +13,8 @@ body {
     margin: 0;
     background: var(--c3);
     color: #333;
+    width: 100wh;
+    height: 100vh;
 }
 
 header, nav, main, section, article, aside, footer {
@@ -22,6 +24,8 @@ header, nav, main, section, article, aside, footer {
 }
 
 header {
+    width: 100wh;
+
     background: var(--c1);
     color: white;
     transition: background 0.2s;
@@ -33,8 +37,51 @@ header div{
     font-size: 0.9em;
 }
 
+/*Menu de navegacion mobil*/
+.btn_nav{
+    position: fixed;
+    bottom: 2%;
+    left: 5%;
+    width: 60px;
+    height: 60px;
+    background-color: var(--c5);
+    z-index: 200;
+    border-radius: 25px;
+    border: none;
+    transition-duration: 0.2s;
+}
+.btn_nav:hover{
+    background-color: var(--c2);
+}
+.btn_nav:hover img{
+    filter: invert(1.0);
+}
 
-nav ul {
+.btn_nav img{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+.nav_menu_side{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: var(--c1);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 15px 0px 100px var(--c1);
+}
+
+/*Menu de navegacion*/
+.nav_menu_big{
     width: 100%;
     height: 100%;
     list-style: none;
@@ -42,6 +89,26 @@ nav ul {
     display: flex;
     gap: 15px;
     object-fit: contain;
+    
+}
+
+
+/*Pantallas de telefono grande*/
+@media screen and (max-width: 600px){
+    .nav_menu_big{
+        display: none;
+    }
+    .btn_nav{
+        display: block;
+    }
+}
+@media screen and (min-width: 600px){
+    .nav_menu_big{
+        display: block;
+    }
+    .btn_nav{
+        display: none;
+    }
 }
 
 nav a {
@@ -52,6 +119,7 @@ nav a {
     transition-duration: 0.2s;
     padding: 10px;
     display: inline-block;
+
     
 }
 
@@ -61,6 +129,7 @@ nav a:hover {
 }
 
 main {
+    min-width: 100wh;
     display: flex;
     padding: 0px;
     margin: 0px;
@@ -173,10 +242,7 @@ address {
 
 /*Pantallas de telefono pequeña*/
 @media only screen and (max-width: 700px){
-    header{
-        font-size: 0.5rem;
-        text-align: center;
-    }
+
     aside{
         display: none;
         opacity: 0.0;
@@ -189,9 +255,7 @@ address {
 }
 /*Pantallas de telefono grande*/
 @media only screen and (min-width: 700px){
-    header{
-        font-size: 0.8rem;
-    }
+
     figure iframe{
         width: 40%;
         height: 40%;
@@ -204,9 +268,7 @@ address {
 }
 /*Pantallas de tablet mediana*/
 @media only screen and (min-width: 768px){
-    header{
-        font-size: 0.8rem;
-    }
+
     figure iframe{
         width: 80%;
         height: 80%;
@@ -219,9 +281,7 @@ address {
 }
 /*Pantallas de escritorio grande*/
 @media only screen and (min-width: 1200px){
-    header{
-        font-size: 0.8rem;
-    }
+
     figure iframe{
         width: 800px;
         height: 400px;
